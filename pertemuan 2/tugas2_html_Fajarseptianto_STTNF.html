@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS 2-TABLE & FORM</title>
+  </head>
+  <body bgcolor="#279EFF">
+    <!-- MATA KULIAH -->
+    <h1 align="center">mata kuliah</h1>
+    <table align="center" border="1" cellspacing="1" cellpadding="10">
+      <thead bgcolor="#96B6C5">
+        <th>hari</th>
+        <th>jam</th>
+        <th>mata kuliah</th>
+        <th>dosen</th>
+        <th>ruang</th>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- baris 1 -->
+          <td rowspan="2">SENIN</td>
+          <td>08.00-10.00</td>
+          <td>Kajian Islam</td>
+          <td>Ust.Anwar Nashihin,Lc.</td>
+          <td>ruang teori</td>
+        </tr>
+        <tr>
+          <!-- <td>senin</td> -->
+          <td>10.00-12.00</td>
+          <td>Aplikasi Perkantoran</td>
+          <td>Drs.MGS Hendri, M.M</td>
+          <td rowspan="5">ruang i</td>
+        </tr>
+        <tr>
+          <!-- baris 2 -->
+          <td rowspan="2">SELASA</td>
+          <td>08.00-10.00</td>
+          <td>Linux Fundamental</td>
+          <td>Henry Saptono,S.Si,M.Kom.</td>
+          <!-- <td>ruang teori</td> -->
+        </tr>
+        <tr>
+          <!-- <td>senin</td> -->
+          <td>10.00-12.00</td>
+          <td>HTML, CSS, Javascriptcss</td>
+          <td rowspan="3">Sirojil Munir,S.Si,M.Kom.</td>
+          <!-- <td>ruang teori</td> -->
+        </tr>
+        <tr>
+          <!-- baris 3 -->
+          <td rowspan="2">RABU</td>
+          <td>08.00-10.00</td>
+          <td>Basis Data</td>
+          <!-- <td>Ust.anwar nashihin.lc</td> -->
+          <!-- <td>ruang teori</td> -->
+        </tr>
+        <tr>
+          <!-- <td>senin</td> -->
+          <td>10.00-12.00</td>
+          <td>Algoritma & Pemrogramanritma</td>
+          <!-- <td>Ust.anwar nashihin.lc</td> -->
+          <!-- <td>ruang teori</td> -->
+        </tr>
+        <tr>
+          <!-- baris 4 -->
+          <td rowspan="2">KAMIS</td>
+          <td>08.00-10.00</td>
+          <td>Kewirausahaan</td>
+          <td>Khoirul Umam,S.Pd</td>
+          <td rowspan="2">ruang teori</td>
+        </tr>
+        <tr>
+          <!-- <td>senin</td> -->
+          <td>10.00-12.00</td>
+          <td>Bahasa Inggris</td>
+          <td>Drs.Mahfudz</td>
+          <!-- <td>ruang teori</td> -->
+        </tr>
+      </tbody>
+      <tfoot bgcolor="#96B6C5">
+        <th colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</th>
+      </tfoot>
+    </table>
+
+    <h1 align="center">form register produk</h1>
+    <!-- form register produk -->
+    <table align="center">
+      <thead bgcolor="#96B6C5">
+        <th colspan="2">form register produk</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>nama produk</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>jenis produk</td>
+          <td>
+            <select name="jenis" id="jenis">
+              <option value="">- kategori produk -</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>harga</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>stok</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>photo</td>
+          <td><input type="text" /></td>
+        </tr>
+      </tbody>
+      <tfoot bgcolor="#96B6C5">
+        <th colspan="2">
+          <input type="submit" value="kirim" />
+          <input type="reset" value="batal" />
+        </th>
+      </tfoot>
+    </table>
+
+    <!-- member -->
+    <h1 align="center">form member</h1>
+    <table align="center" cellspacing="5">
+      <thead bgcolor="#96B6C5">
+        <th colspan="2">Form Register Member</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>username</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+      </tbody>
+      <tfoot bgcolor="#96B6C5">
+        <th colspan="2">
+          <input type="submit" value="masuk" /><input
+            type="reset"
+            value="batal"
+          />
+        </th>
+      </tfoot>
+    </table>
+  </body>
+</html>
