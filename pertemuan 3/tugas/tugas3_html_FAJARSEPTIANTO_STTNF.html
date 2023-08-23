@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3-frame/frameset & hyperlink</title>
+</head>
+<frameset rows="35%,5%,*,10%" cols="100%">
+    <frame src="./pages/header.html" noresize="yes" scrolling="no">
+    
+    <frameset>
+        <frame src="./pages/navigation.html">
+    </frameset>
+    
+    <frameset cols="20%,*,20%"">
+        <frame src="./pages/left-sitebar.html">
+        <frame src="./pages/content.html" name="content">
+        <frame src="./pages/right-sidebar.html" name="content">
+    </frameset>
+    <frameset>
+        <frame src="./pages/footer.html">
+    </frameset>
+</frameset>
+</html>

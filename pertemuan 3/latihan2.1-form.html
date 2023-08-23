@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir dasar</title>
+  </head>
+  <body bgcolor="#749BC2">
+    <table align="center" border="0"cellpadding="15" cellspacing="1">
+      <thead>
+        <th colspan="3">buku tamu</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td><input type="email" name="email" placeholder="email" /></td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>jenis kelamin</td>
+          <td>
+            <input type="radio" name="laki" id="laki" value="laki" />laki
+            <input type="radio" name="perempuan" id="perempuan" />perempuan
+          </td>
+        </tr>
+        <tr >
+          <td valign="top">hobi</td>
+          <td>
+            <input type="checkbox" name="futsal" id="futsal" />futsal
+            <br /><input type="checkbox" name="bultang" id="bultang" checked/>badminton
+            <br /><input type="checkbox" name="baca" id="baca" />membaca
+            <br /><input type="checkbox" name="hiking" id="hiking" />hiking
+          </td>
+        </tr>
+        <tr>
+          <td>pendidikan terakhir</td>
+          <td>
+            <select name="pendidikan" id="pendidikan">
+              <option value="chose">pilih pendidikan terakhir</option>
+              <option value="SD">SD</option>
+              <option value="SMP">SMP</option>
+              <option value="S1">S1</option>
+              <option value="S2">S2</option>
+              <option value="S3" selected>S3</option>
+              <option value=""></option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">alamat</td>
+          <td>
+            <textarea
+              name="komentar"
+              id="komentar"
+              cols="50"
+              rows="5"
+            ></textarea>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="3">
+          <input type="submit" name="simpan" value="simpan" />
+          <input type="reset" name="ulang" value="batal" />
+        </th>
+      </tfoot>
+    </table>
+  </body>
+</html>
