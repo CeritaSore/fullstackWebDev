@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #75c2f6;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+main h2 {
+  color: white;
+}
+main h2 span {
+  color: white;
+  text-transform: capitalize;
+  border-bottom: 3px solid white;
+}
+main table {
+  border: 3px solid white;
+  margin-top: 10px;
+}
+main table thead th {
+  color: white;
+  text-transform: capitalize;
+}
+main table thead th span {
+  color: white;
+  text-transform: capitalize;
+  border-bottom: 3px solid white;
+}
+main table tbody tr td{
+    color:white;text-transform: capitalize;
+}
+tfoot th input{
+width: 50px;
+background-color: #A0C49D;
+border: 0;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}

@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #75c2f6;
+}
+.gambar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gambar .gambar1 {
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+  margin: 10px;
+}
+.gambar .gambar1:hover {
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid red;
+  transition: ease-in-out 0.5s;
+}
+.gambar .gambar1 img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+}
+/* a */
+.gambar .gambar2 {
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+  margin: 10px;
+}
+.gambar .gambar2:hover {
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid red;
+  transition: ease-in-out 0.5s;
+}
+.gambar .gambar2 img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+}
+/* b */
+.gambar .gambar3 {
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+  margin: 10px;
+}
+.gambar .gambar3:hover {
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid red;
+  transition: ease-in-out 0.5s;
+}
+.gambar .gambar3 img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+}
+/* c */
+.gambar .gambar4 {
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+  margin: 10px;
+}
+.gambar .gambar4:hover {
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid red;
+  transition: ease-in-out 0.5s;
+}
+.gambar .gambar4 img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+}
+/* d */

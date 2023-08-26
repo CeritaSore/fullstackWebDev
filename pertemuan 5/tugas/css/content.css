@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #75c2f6;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  /* border: 1px solid red; */
+}
+#about .poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about .poster h1 {
+  text-transform: capitalize;
+  color: white;
+  border-bottom: 3px solid white;
+  margin-bottom: 20px;
+}
+#about .poster img {
+  width: 20%;
+  /* border: 1px; */
+  border-radius: 50%;
+}
+#about h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+#about h1 span {
+  border-bottom: 3px solid white;
+}
+#about .id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about .id p {
+  color: white;
+  padding: 0 20px;
+  text-transform: capitalize;
+}
+/* skill */
+#skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#skill h2 {
+  color: white;
+  border-bottom: 3px solid white;
+  margin-bottom: 1rem;
+}
+#skill ul {
+  list-style-type: none;
+  display: flex;
+  text-transform: capitalize;
+  width: 50%;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 10px;
+}
+/* bio */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bio h2 {
+  color: white;
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.bio ul {
+  list-style-type: none;
+  color: white;
+}
+.daily {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+.daily h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.daily h2 span {
+  color: white;
+  border-bottom: 3px solid white;
+}
+.daily ol {
+  list-style-type: none;
+  color: white;
+}
