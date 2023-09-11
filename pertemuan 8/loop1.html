@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #053b50;
+    }
+  </style>
+  <body>
+    <select name="" id="tanggal">
+      <script>
+        let tgl;
+        for (tgl = 1; tgl <= 31; tgl++) {
+          document.write("<option>" + tgl + "</option>");
+        }
+      </script>
+    </select>
+    <select name="" id="bulan">
+      <script>
+        let bulan = [
+          "jan",
+          "feb",
+          "mar",
+          "apr",
+          "mei",
+          "jun",
+          "jul",
+          "agus",
+          "sep",
+          "okt",
+          "nov",
+          "des",
+        ];
+        for (let i = 0; i < bulan.length; i++) {
+          document.write(`<option value="${i + 1}">${bulan[i]}</option>`);
+        }
+      </script>
+    </select>
+    <!-- <form>
+      Tanggal Lahir:<br />
+      <select name="tgl">
+        <option value="">-- Pilih Tanggal --</option>
+        <script>
+          let tgl = 1;
+          while (tgl <= 31) {
+            document.write('<option value="' + tgl + '">' + tgl + "</option>");
+            tgl++;
+          }
+        </script>
+      </select>
+      <select name="bln">
+        <option value="">-- Pilih Bulan --</option>
+        <script>
+          let bulan1 = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "Mei",
+            "Jun",
+            "Jul",
+            "Ags",
+            "Sep",
+            "Okt",
+            "Nov",
+            "Des",
+          ];
+
+          for (let bln in bulan1) {
+            document.write(
+              `<option value="${bulan1[bln]}">${bulan[bln]}</option>`
+            );
+          }
+          /*
+            for(let bln of bulan){
+                document.write(`<option value="${bln}">${bln}</option>`);
+            }
+            */
+        </script>
+      </select>
+      <select name="thn">
+        <option value="">-- Pilih Tahun --</option>
+        <script>
+          let thn = 2023;
+          while (thn >= 1950) {
+            document.write('<option value="' + thn + '">' + thn + "</option>");
+            thn--;
+          }
+        </script>
+      </select>
+    </form> -->
+
+    <!-- <ul id="mobil">
+      <li></li>
+    </ul>
+    <script>
+      const car = ["volvo", "bmw", "toyota", "honda"];
+      let dataMobil = "";
+      for (let car of dataMobil) {
+        dataMobil += "<li>$car</li>";
+      }
+      document.getElementById("mobil").innerHTML = dataMobil;
+    </script> -->
+    <ul id="mobil"></ul>
+    <script>
+      const cars = ["volvo", "bmw", "toyota", "honda"];
+      let dataMobil = "";
+      for (let car of cars) {
+        dataMobil += `<li>${car}</li>`;
+      }
+      document.getElementById("mobil").innerHTML = dataMobil;
+    </script>
+    <table id="myTable">
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+      </tr>
+    </table>
+
+    <script>
+      var data = [
+        { nama: "John", usia: 30 },
+        { nama: "Jane", usia: 25 },
+        { nama: "Doe", usia: 35 },
+      ];
+
+      var table = document.getElementById("myTable");
+      var tableHTML = "<tr><th>Nama</th><th>Usia</th></tr>";
+
+      for (var i = 0; i < data.length; i++) {
+        tableHTML +=
+          "<tr><td>" + data[i].nama + "</td><td>" + data[i].usia + "</td></tr>";
+      }
+
+      table.innerHTML = tableHTML;
+    </script>
+
+    <table id="pegawai">
+      <thead>
+        <tr>
+          <th>no</th>
+          <th>nama pegawai</th>
+          <th>nomor induk</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Isi tabel akan dimasukkan di sini -->
+      </tbody>
+    </table>
+    <script>
+      let isi = ""; // Inisialisasi string isi
+      var pegawai = [
+        { nama: "John", no: 1, nomor_induk: "A123" },
+        { nama: "Jane", no: 2, nomor_induk: "B456" },
+        { nama: "Doe", no: 3, nomor_induk: "C789" },
+        { nama: "Doe", no: 3, nomor_induk: "C789" },
+        { nama: "Doe", no: 3, nomor_induk: "C789" },
+        { nama: "Doe", no: 3, nomor_induk: "C789" },
+        { nama: "Doe", no: 3, nomor_induk: "C789" },
+      ];
+
+      for (let dataPegawai of pegawai) {
+        
+        isi += `<tr>
+                <td>${dataPegawai.no}</td>
+                <td>${dataPegawai.nama}</td>
+                <td>${dataPegawai.nomor_induk}</td>
+              </tr>`;
+      }
+
+      // Setelah mengisi tabel, masukkan isi ke dalam elemen tbody
+      document.getElementById("tableBody").innerHTML = isi;
+    </script>
+  </body>
+</html>

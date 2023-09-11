@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1 Javascript</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+      #nama,
+      #produk,
+      #jumlah,
+      #satuan,
+      #diskon,
+      #bersih {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #352f44;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
+    "
+  >
+    <h1 style="text-align: center">Belanja Online</h1>
+    <p>nama pelanggan <span id="nama"></span></p>
+    <p>list produk saat ini</p>
+    <ul>
+      <li>kulkas</li>
+      <li>TV</li>
+      <li>AC</li>
+    </ul>
+    <p id="">nama produk <span id="produk"></span></p>
+    <p id="">jumlah pembelian <span id="jumlah"></span></p>
+    <p id="">harga satuan <span id="satuan"></span></p>
+    <p id="">diskon <span id="diskon"></span></p>
+    <p id="">harga bayar <span id="bersih"></span></p>
+
+    <script>
+      let pelanggan = "fajar";
+      let produkPilihan = "kulkas";
+      let jumlahBeli = 3;
+      let hargaSatuan;
+      if (produkPilihan === "tv") {
+        hargaSatuan = 2000000;
+      } else if (produkPilihan === "ac") {
+        hargaSatuan = 3000000;
+      } else if (produkPilihan === "kulkas") {
+        hargaSatuan = 4000000;
+      }
+
+      let hargaKotor = jumlahBeli * hargaSatuan;
+      let diskon =
+        produkPilihan === "kulkas" && jumlahBeli >= 3
+          ? 0.3 * hargaKotor
+          : 0.1 * hargaKotor;
+      let ppn = 0.11 * (hargaKotor - diskon);
+      let hargaBayar = hargaKotor - diskon + ppn;
+
+      let nama = document.getElementById("nama");
+      let produk = document.getElementById("produk");
+      let jumlah = document.getElementById("jumlah");
+      let satuan = document.getElementById("satuan");
+      let disk = document.getElementById("diskon");
+      let bersih = document.getElementById("bersih");
+      nama.innerHTML = pelanggan;
+      produk.innerHTML = produkPilihan;
+      jumlah.innerHTML = jumlahBeli;
+      satuan.innerHTML = hargaSatuan;
+      disk.innerHTML = diskon;
+      bersih.innerHTML = hargaBayar;
+    </script>
+  </body>
+</html>

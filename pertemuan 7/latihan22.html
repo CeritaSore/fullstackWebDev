@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var pelanggan = "adi";
+      var produkPilihan = "Kulkas";
+      var jml_beli = 3;
+      var harga_satuan;
+      if (produkPilihan === "TV") {
+        harga_satuan = 2000000; // TV => 2jt
+      } else if (produkPilihan === "AC") {
+        harga_satuan = 3000000; // AC => 3jt
+      } else if (produkPilihan === "Kulkas") {
+        harga_satuan = 4000000; // Kulkas => 4jt
+      }
+
+      var harga_kotor = jml_beli * harga_satuan;
+      var diskon =
+        produkPilihan === "Kulkas" && jml_beli >= 3
+          ? 0.3 * harga_kotor
+          : 0.1 * harga_kotor;
+      var ppn = 0.11 * (harga_kotor - diskon);
+      var harga_bayar = harga_kotor - diskon + ppn;
+
+      document.write("Pelanggan: " + pelanggan + "<br>" + "Produk Pilihan: " + produkPilihan + "<br>" +"Jumlah Beli: " + jml_beli + "<br>" +"Harga Satuan: " + harga_satuan + "<br>" +"Harga Kotor: " + harga_kotor + "<br>" +"Diskon: " + diskon + "<br>" +"PPN: " + ppn + "<br>" +"Harga Bayar: " + harga_bayar + "<br>");
+      
+    </script>
+  </body>
+</html>
+

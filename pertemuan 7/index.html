@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript dasar</title>
+  </head>
+  <body>
+    <h1>kasir</h1>
+    <p>silahkan berbelanja</p>
+    <p>harga jam dinding = 100.000</p>
+    <p id="cetak"></p>
+    <script>
+      //   let hargaJam = document.getElementById("#cetak");
+      //   if (hargaJam < 90000) {
+      //     document.write("uang saya kurang");
+      //   } else {
+      //     document.write("silahkan belanja lagi");
+      //   }
+      //   let budi = "pelanggan";
+      //   let hargaBarang = 76000;
+      //   if (hargaBarang > 1000000) {
+      //     document.write("selamat kepada" + budi + "kamu mendapat diskon");
+      //   } else {
+      //     document.write("silahkan coba lagi");
+      //   }
+      //   let pelanggan = "Budi Santoso";
+      //   const totalBelanja = 150000;
+      //   let ket = "";
+      //   //struktur kendali if
+      //   /*
+      // if(totalBelanja > 100000){
+      //     ket = 'Hello ' + pelanggan + ', Anda belanja sebesar Rp. ' +
+      //           totalBelanja + ', maka Anda dapat hadiah';
+      // }
+      // else{
+      //     ket = 'Hello ' + pelanggan +
+      //           ', terima kasih sudah berbelanja di toko kami';
+      // }
+      // */
+      //   //ternary
+      //   ket =
+      //     totalBelanja > 100000 ? ", maka anda dapat hadiah" : ", Terima Kasih";
+      //   //cetak ke hal web
+      //   //document.write(ket);
+      //   document.write(
+      //     "Hello " +
+      //       pelanggan +
+      //       ", Anda belanja sebesar Rp. " +
+      //       totalBelanja +
+      //       " " +
+      //       ket
+      //   );
+      //   let siswa = "Budi Santoso";
+      //   const nilai = 95;
+      //   let ket = "";
+      //   //ternary
+      //   ket = nilai >= 60 ? "Lulus" : "Gagal";
+      //   //cetak ke hal web
+      //   document.write(
+      //     "Nama Siswa: " +
+      //       siswa +
+      //       "<br/>Nilai: " +
+      //       nilai +
+      //       "<br/>Keterangan: " +
+      //       ket
+      //   );
+
+      let mahasiswa = "Budi Santoso";
+      let fisik = "Sehat";
+      let cuaca = "Hujan Lebat";
+      const uang_jajan = 1000;
+
+      //if multikondisi dengan syarat > 1
+      if (cuaca == "Cerah" && fisik == "Sehat" && uang_jajan > 5000)
+        ket = "Berangkat ke kampus menggunakan sepeda";
+      else if (cuaca == "Hujan Ringan" && fisik == "Sehat" && uang_jajan > 5000)
+        ket = "Berangkat ke kampus menggunakan sepeda motor";
+      else if (cuaca == "Hujan Lebat" && fisik == "Sehat" && uang_jajan > 5000)
+        ket = "Berangkat ke kampus sewa taksi online";
+      else ket = "Tidak berangkat ke kampus";
+
+      //cetak ke hal web
+      document.write(mahasiswa + " " + ket + " dengan cuaca " + cuaca);
+    </script>
+    <script>
+      let pegawai = "Budi Santoso";
+      const jabatan = "Manager";
+      //stuktur kendali if multikondisi
+      /*
+if(jabatan == 'Manager') gapok = 15000000;
+else if(jabatan == 'Asisten Manager') gapok = 10000000;
+else if(jabatan == 'Supervisor') gapok = 7500000;
+else if(jabatan == 'Staff') gapok = 5000000;
+else gapok = 0;
+*/
+      //struktur kendali switch case
+      switch (jabatan) {
+        case "Manager":
+          gapok = 15000000;
+          break;
+        case "Asisten Manager":
+          gapok = 10000000;
+          break;
+        case "Supervisor":
+          gapok = 7500000;
+          break;
+        case "Staff":
+          gapok = 5000000;
+          break;
+        default:
+          gapok = 0;
+          break;
+      }
+      //cetak ke hal web
+      document.write(
+        "Nama Pegawai: " +
+          pegawai +
+          "<br/>Jabatan: " +
+          jabatan +
+          "<br/>Gaji Pokok: Rp. " +
+          gapok
+      );
+    </script>
+    <script>
+      let siswa = "Budi Santoso";
+      const nilai = 15;
+      let ket = "";
+      //ternary
+      ket = nilai >= 60 ? "Lulus" : "Gagal";
+      //if multikondisi dengan syarat > 1
+      if (nilai >= 85 && nilai <= 100) grade = "A";
+      else if (nilai >= 75 && nilai < 85) grade = "B";
+      else if (nilai >= 60 && nilai < 75) grade = "C";
+      else if (nilai >= 30 && nilai < 60) grade = "D";
+      else if (nilai >= 0 && nilai < 30) grade = "E";
+      else grade = "";
+      //cetak ke hal web
+      document.write(
+        "Nama Siswa: " +
+          siswa +
+          "<br/>Nilai: " +
+          nilai +
+          "<br/>Keterangan: " +
+          ket +
+          "<br/>Grade: " +
+          grade
+      );
+    </script>
+    <!-- <script>
+      let siswa = "Budi Santoso";
+      const nilai = 95;
+      let ket = "";
+      //ternary
+      ket = nilai >= 60 ? "Lulus" : "Gagal";
+      //cetak ke hal web
+      document.write(
+        "Nama Siswa: " +
+          siswa +
+          "<br/>Nilai: " +
+          nilai +
+          "<br/>Keterangan: " +
+          ket
+      );
+    </script> -->
+    <script>
+      let pelanggan = "Budi Santoso";
+      const totalBelanja = 150000;
+      let ket = "";
+      //struktur kendali if
+      /*
+if(totalBelanja > 100000){
+	ket = 'Hello ' + pelanggan + ', Anda belanja sebesar Rp. ' +
+	      totalBelanja + ', maka Anda dapat hadiah';
+}
+else{
+	ket = 'Hello ' + pelanggan +
+		  ', terima kasih sudah berbelanja di toko kami';
+}
+*/
+      //ternary
+      ket =
+        totalBelanja > 100000 ? ", maka anda dapat hadiah" : ", Terima Kasih";
+      //cetak ke hal web
+      //document.write(ket);
+      document.write(
+        "Hello " +
+          pelanggan +
+          ", Anda belanja sebesar Rp. " +
+          totalBelanja +
+          " " +
+          ket
+      );
+    </script>
+  </body>
+  <script></script>
+</html>

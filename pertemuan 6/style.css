@@ -1,0 +1,9 @@
+:root{
+    --warna1:#053B50;
+    --warna2:#176B87;
+    --warna3:#64CCC5;
+    --warna4:#EEEEEE;
+}
+nav{
+    background-color: var(--warna1);
+}

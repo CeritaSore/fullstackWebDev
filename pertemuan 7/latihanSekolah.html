@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript dasar</title>
+  </head>
+  <body>
+    <p id="para">90</p>
+    <p id="grade"></p>
+    <p id="keterangan"></p>
+    <script>
+      //   let namaSiswa = "andi";
+      //   let nilaiSiswa = 80;
+      //   if (nilaiSiswa >= 90) {
+      //     console.log("grademu a");
+      //   } else {
+      //     console.log("kamu gagal");
+      //   }
+      //   let x;
+      //   for (x = 1; x <= 10; x++);
+      //   {
+      //     console.log(x);
+      //     document.write(x);
+
+      //   }
+      //   let y;
+      //   for (y = 50; y >= 30; y--) {
+      //     if (y % 2 == 1) document.write("<br/>Bilangan " + y);
+      //   }
+      //   let i;
+      //   for (i = 1; i <= 10; i++) {
+      //     document.write("</br>" + i);
+      //   }
+
+      let nilai = 90;
+      console.log("nilainya " + nilai);
+      document.write("nilainya " + nilai);
+      let predikat = null;
+      let i;
+      if (nilai > 90) {
+        console.log((predikat = "a"));
+        document.write("predikatnya " + predikat);
+      } else if (nilai >= 80) {
+        console.log((predikat = "b"));
+      } else if (nilai >= 70) {
+        console.log((predikat = "c"));
+      } else if (nilai >= 60) {
+        console.log((predikat = "d"));
+      } else {
+        console.log((predikat = "e"));
+      }
+
+      switch (predikat) {
+        case "a":
+          i = "lulus";
+          break;
+        case "b":
+          i = "lulus";
+          break;
+        case "c":
+          i = "lulus";
+          break;
+        case "d":
+          i = "tidak lulus";
+          break;
+        default:
+          i = "tidak lulus";
+          break;
+      }
+      console.log(i);
+    </script>
+  </body>
+</html>
