@@ -1,0 +1,11 @@
+.jumbotron {
+  height: 20rem;
+  margin: auto;
+}
+.jumbotron .display-4 {
+  text-align: center;
+  padding-top: 5rem;
+}
+.jumbotron .lead {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
